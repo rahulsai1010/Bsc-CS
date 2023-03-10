@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Achievements</title>
+	<style>
+		body {
+			background-image: url("technology-background.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.button {
+			width: 150px;
+			height: 150px;
+			margin: 20px;
+			background-color: #ffffff;
+			border: 2px solid #000000;
+			border-radius: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.2s ease-in-out;
+            position: relative;
+		}
+		.button:hover {
+			cursor: pointer;
+            transform: scale(1.1);
+		}
+        .button:clicked {
+            transform: scale(1.5) translate(90%, 50%);
+			z-index: 1;
+        }
+		.button img {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="button">
+			<a href="achievements-milestone.jpg">
+				<img src="achievements-milestone.jpg" alt="Ach -1" onclick="toggleZoom(this)">
+			</a>
+		</div>
+		<div class="button">
+            
+			<a href="#">
+				<img src="button-2.jpg" alt="Ach -2">
+			</a>
+		</div>
+		<div class="button">
+			<a href="#">
+                
+				<img src="button-3.jpg" alt="Ach -3">
+			</a>
+		</div>
+		<div class="button">
+			<a href="#">
+				<img src="button-4.jpg" alt="Ach -4">
+			</a>
+		</div>
+		<div class="button">
+			<a href="#">
+				<img src="button-5.jpg" alt="Ach -5">
+			</a>
+		</div>
+		<div class="button">
+			<a href="#">
+				<img src="button-6.jpg" alt="Ach -6">
+			</a>
+		</div>
+		<div class="button">
+			<a href="#">
+				<img src="button-7.jpg" alt="Ach -7">
+			</a>
+		</div>
+		<div class="button">
+			<a href="#">
+				<img src="button-8.jpg" alt="Ach -8">
+			</a>
+		</div>
+        <div class="button">
+			<a href="#">
+				<img src="button-9.jpg" alt="Ach -9">
+			</a>
+		</div>
+        <div class="button">
+			<a href="#">
+				<img src="button-10.jpg" alt="Ach -10">
+			</a>
+		</div>
+        <div class="button">
+			<a href="#">
+				<img src="button-11.jpg" alt="Ach -11">
+			</a>
+		</div>
+        <div class="button">
+			<a href="#">
+				<img src="button-12.jpg" alt="Ach -12">
+			</a>
+		</div>
+	</div>
+</body>
+</html>

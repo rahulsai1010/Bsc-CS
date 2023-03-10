@@ -1,0 +1,979 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+
+}
+/* 
+.WebContainer{
+    width: 100%;
+    height: auto;
+}
+.articles{
+    width: 100%;
+    height: auto;
+    width: auto;
+} */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    background:rgb(0, 0, 0);
+}
+
+.banner{
+       
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.882),rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.882)),url(background2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+}
+
+.menu-icon{
+    width: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: none;
+}
+.navbar{
+    width: 95%;
+    font-size: medium;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 75px;
+    margin: 10px 0;
+    text-align: left;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: dotted;
+    color: aliceblue;
+    text-transform: uppercase;
+    
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0%;
+    background-color: rgb(172, 118, 223);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.4s;
+}
+.navbar ul li:hover::after{
+    color: #270040;
+    width: 100% ;
+}
+.content{
+    width: 70%;
+    position:absolute;
+    top:60%;
+    left:2%;
+    transform: translateY(-250%);
+    text-align: left ;
+    color: rgba(255, 255, 255, 0.832);
+
+}
+.content h1{
+    font-size: 50px;
+    margin-top: -50px;
+}
+button{
+    width: 200px;
+    height: 120px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 30px 30px;
+    border-radius: 25px;
+    font-weight: 100;
+    letter-spacing: 0px;
+    font-size: medium;
+    word-break: 30%;
+    border: 2px solid rgb(7, 221, 103);
+    background:transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+
+span{
+    background-color: rgb(58, 17, 96) ;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+button:hover span{
+    width:100%;
+}
+button:hover{
+    border: none;
+
+}
+
+.content1{
+    width: 100%;
+    position:absolute;
+    top:0%;
+    left:20%;
+    transform: translateY(0%);
+    text-align: left;
+    color: rgba(255, 255, 255, 0.832);
+    
+    }
+    .content1 h1{
+        font-size: 50px;
+        margin-top: -25px;
+    }
+    /* .button1{
+        width: 100px;
+        height: 100px;
+        padding: 15px 0;
+        text-align: left;
+        margin: 20px 30px;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: large;
+        word-break: 20%;
+        border: 2px solid rgb(7, 221, 103);
+        background:transparent;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+} */
+
+.content2{
+    width: 90%;
+    position:absolute;
+    top:0%;
+    left: 20%;
+    transform: translateY(0%);
+    text-align: left ;
+    color: rgba(255, 255, 255, 0.832);
+
+}
+.content h1{
+    font-size: 50px;
+    margin-top: -120px;
+}
+
+/* .button2{
+    width: 200px;
+    height: 100px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: large;
+    word-break: 20%;
+    border: 2px solid rgb(7, 221, 103);
+    background:transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+} */
+
+.content3{
+    width: 90%;
+    position:absolute;
+    top:55%;
+    left: -33%;
+    transform: translateY(220%);
+    text-align: left ;
+    color: rgba(255, 255, 255, 0.832);
+
+}
+.content h1{
+    font-size: 50px;
+    margin-top: -120px;
+}
+
+.content4{
+    width: 90%;
+    position:absolute;
+    top:0%;
+    left:25%;
+    transform: translateY(0%);
+    text-align: left ;
+    color: rgba(255, 255, 255, 0.832);
+
+}
+.content h1{
+    font-size: 50px;
+    margin-top: -120px;
+}
+
+
+
+
+/* <div class="ism-slider" data-image_fx="zoompan" data-radio_type="thumbnail" id="my-slider">
+<ol>
+  <li>
+    <img src="ism/image/slides/bokeh-715283_1280.jpg">
+    <div class="ism-caption ism-caption-0">Live updates</div>
+  </li>
+  <li>
+    <img src="ism/image/slides/beautiful-701678_1280.jpg">
+    <div class="ism-caption ism-caption-0">News 2</div>
+  </li>
+  <li>
+    <img src="ism/image/slides/beach-hut-237489_1280.jpg">
+    <div class="ism-caption ism-caption-0">News 3</div>
+  </li>
+  <li>
+    <img src="ism/image/slides/city-690332_1280.jpg">
+    <div class="ism-caption ism-caption-0">News 4</div>
+  </li>
+</ol>
+</div>
+<p class="ism-badge" id="my-slider-ism-badge"><a class="ism-link" href="http://imageslidermaker.com" rel="nofollow">generated with ISM</a></p> */
+
+
+@media only screen and (max-width:1500px){
+   
+    button{
+        width: 150px;
+        height: 100px;
+        padding: 0px 0;
+        text-align: center;
+        margin: 20px 30px;
+        border-radius: 25px;
+        font-weight: 10;
+        letter-spacing: 2px;
+        font-size: 20px;
+        font-style: normal;
+        word-break: 25%;
+        border: 2px solid rgb(7, 221, 103);
+        background:transparent;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    .content{
+        width: 70%;
+        position:absolute;
+        top:70%;
+        left:0%;
+        transform: translateY(-250%);
+        text-align: left ;
+        color: rgba(255, 255, 255, 0.832);
+    
+    }
+    .content h1{
+        font-size: 50px;
+        margin-top: -50px;
+    }
+
+
+    .content3{
+        width: 90%;
+        position:absolute;
+        top:0%;
+        left: -33%;
+        transform: translateY(150%);
+        text-align: left ;
+        color: rgba(255, 255, 255, 0.832);
+    
+    }
+
+}
+
+@media only screen and (max-width:1200px){
+    button{
+        width: 140px;
+        height: 100px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 30px 30px;
+        border-radius: 25px;
+        font-weight: 10;
+        letter-spacing: 0px;
+        font-size: medium;
+        word-break: 20%;
+        border: 2px solid rgb(7, 221, 103);
+        background:transparent;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .content{
+        width: 30%;
+        position:absolute;
+        top:25%;
+        left: -1%;
+        transform: translateY(0%);
+        text-align: left ;
+        color: rgba(255, 255, 255, 0.832);
+    
+    }
+    .content h1{
+        font-size: 50px;
+        margin-top: -70px;
+    }
+    .content1{
+        width: 40%;
+        position:absolute;
+        top:0%;
+        left:50%;
+        transform: translateY(0%);
+        text-align: left;
+        color: rgba(255, 255, 255, 0.832);
+        
+        }
+        .content1 h1{
+            font-size: 30px;
+            margin-top: -20px;
+        }
+
+    .content2{
+        width: 65%;
+        position:absolute;
+        top:0%;
+        left: 125%;
+        transform: translateY(0%);
+        text-align: left ;
+        color: rgba(255, 255, 255, 0.832);
+        
+        }
+        .content h1{
+            font-size: 30px;
+            margin-top: 30px;
+           
+        }
+
+        .content3{
+            width: 50%;
+            position:absolute;
+            top:40%;
+            left:-275%;
+            transform: translateY(20%);
+            text-align: left ;
+            color: rgba(255, 255, 255, 0.832);
+            
+            }
+            .content h1{
+                font-size: 50px;
+                margin-top: 30px;
+               
+            }
+
+            .content4{
+                width: 70%;
+                position:absolute;
+                top:0%;
+                left:380%;
+                transform: translateY(0%);
+                text-align: left ;
+                color: rgba(255, 255, 255, 0.832);
+                
+                }
+                .content h1{
+                    font-size: 50px;
+                    margin-top: 30px;
+                   
+                }
+
+        .logo{
+            width: 50px;
+            margin: 10px 10px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+}
+
+@media only screen and (max-width:700px){
+    .navbar ul{
+        width: 40%;
+        background: linear-gradient(transparent);
+        border-radius: 10px;
+        position: relative;
+        top: -10px;
+        right: 0px;
+        z-index: 2;
+    }
+    .navbar{
+        width: 95%;
+        font-size: small;
+        margin: auto;
+        padding: 10px 0;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .navbar ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .navbar ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+       
+    }
+    #menulist{
+        overflow: hidden;
+        transition:0.5s;
+        font-weight: 100;
+      
+    }
+    .content{
+        flex-basis: 100%;
+        font-size: 20px;
+        margin-left: -5%;
+        margin-top: 5%;
+    }
+    button{
+        width: 120px;
+        height: 140px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 30px;
+        border-radius: 25px;
+        font-weight: 100;
+        letter-spacing: 0px;
+        font-size: medium;
+        word-break: 20%;
+        border: 2px solid rgb(7, 221, 103);
+        background:transparent;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+
+
+
+@media only screen and (max-width:800px){
+
+    button{
+        width: 150px;
+        height: 100px;
+        padding: 10px 0;
+        text-align: center;
+        margin: 20px 30px;
+        border-radius: 25px;
+        font-weight: 10;
+        letter-spacing: 0px;
+        font-size: medium;
+        word-break: 20%;
+        border: 2px solid rgb(7, 221, 103);
+        background:transparent;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    .content{
+        width: 50%;
+        position:absolute;
+        top:15%;
+        left: 12%;
+        transform: translateY(-10%);
+        text-align: left ;
+        color: rgba(255, 255, 255, 0.832);
+    
+    }
+    .content h1{
+        font-size: 50px;
+        margin-top: -70px;
+    }
+    .content1{
+        width: 40%;
+        position:absolute;
+        top:0%;
+        left:50%;
+        transform: translateY(0%);
+        text-align: left;
+        color: rgba(255, 255, 255, 0.832);
+        
+        }
+        .content1 h1{
+            font-size: 30px;
+            margin-top: -20px;
+        }
+
+    .content2{
+        width: 70%;
+        position:absolute;
+        top:0%;
+        left: 130%;
+        transform: translateY(0%);
+        text-align: left ;
+        color: rgba(255, 255, 255, 0.832);
+        
+        }
+        .content h1{
+            font-size: 30px;
+            margin-top: 30px;
+           
+        }
+
+        .content3{
+            width: 50%;
+            position:absolute;
+            top:40%;
+            left:-275%;
+            transform: translateY(40%);
+            text-align: left ;
+            color: rgba(255, 255, 255, 0.832);
+            
+            }
+            .content h1{
+                font-size: 50px;
+                margin-top: 30px;
+               
+            }
+
+            .content4{
+                width: 70%;
+                position:absolute;
+                top:0%;
+                left:380%;
+                transform: translateY(0%);
+                text-align: left ;
+                color: rgba(255, 255, 255, 0.832);
+                
+                }
+                .content h1{
+                    font-size: 50px;
+                    margin-top: 30px;
+                   
+                }
+
+        .logo{
+            width: 50px;
+            margin: 10px 10px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+}
+
+@media only screen and (max-width:700px){
+    button{
+        width: 160px;
+        height: 120px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 30px 30px;
+        border-radius: 25px;
+        font-weight: 100;
+        letter-spacing: 0px;
+        font-size: medium;
+        word-break: 20%;
+        border: 2px solid rgb(7, 221, 103);
+        background:transparent;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width:600px){
+    button{
+        width: 150px;
+        height: 120px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 30px 30px;
+        border-radius: 25px;
+        font-weight: 100;
+        letter-spacing: 0px;
+        font-size: medium;
+        word-break: 20%;
+        border: 2px solid rgb(7, 221, 103);
+        background:transparent;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width:550px){
+    button{
+        width: 140px;
+        height: 120px;
+        padding: 20px 0;
+        text-align: center;
+        margin: 30px 30px;
+        border-radius: 25px;
+        font-weight: 100;
+        letter-spacing: 0px;
+        font-size: medium;
+        word-break: 20%;
+        border: 2px solid rgb(7, 221, 103);
+        background:transparent;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+
+
+ @media only screen and (max-width:480px){
+    button{
+        width: 110px;
+        height: 90px;
+        padding: 20px 0;
+        text-align: center;
+        margin: -50px 50px;
+        border-radius: 20px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: small;
+        word-break: 20%;
+        border: 2px solid rgb(7, 221, 103);
+        background:transparent;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    .content{
+        width: 60%;
+        position:absolute;
+        top:30%;
+        left: 0%;
+        transform: translateY(-200%);
+        text-align: left ;
+        color: rgba(255, 255, 255, 0.832);
+    
+    }
+    .content h1{
+        font-size: 50px;
+        margin-top: -70px;
+    }
+    .content1{
+        width: 40%;
+        position:absolute;
+        top:0%;
+        left:50%;
+        transform: translateY(0%);
+        text-align: left;
+        color: rgba(255, 255, 255, 0.832);
+        
+        }
+        .content1 h1{
+            font-size: 30px;
+            margin-top: -20px;
+        }
+
+    .content2{
+        width: 70%;
+        position:absolute;
+        top:0%;
+        left: 130%;
+        transform: translateY(0%);
+        text-align: left ;
+        color: rgba(255, 255, 255, 0.832);
+        
+        }
+        .content h1{
+            font-size: 30px;
+            margin-top: 30px;
+           
+        }
+
+        .content3{
+            width: 50%;
+            position:absolute;
+            top:200%;
+            left:-275%;
+            transform: translateY(200%);
+            text-align: left ;
+            color: rgba(255, 255, 255, 0.832);
+            
+            }
+            .content h1{
+                font-size: 50px;
+                margin-top: 30px;
+               
+            }
+
+            .content4{
+                width: 70%;
+                position:absolute;
+                top:0%;
+                left:380%;
+                transform: translateY(0%);
+                text-align: left ;
+                color: rgba(255, 255, 255, 0.832);
+                
+                }
+                .content h1{
+                    font-size: 50px;
+                    margin-top: 30px;
+                   
+                }
+
+        .logo{
+            width: 50px;
+            margin: 10px 10px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+}
+
+@media only screen and (max-width:380px){
+    button{
+        width: 100px;
+        height: 90px;
+        padding: 20px 0;
+        text-align: center;
+        margin: -50px 50px;
+        border-radius: 20px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: small;
+        word-break: 20%;
+        border: 2px solid rgb(7, 221, 103);
+        background:transparent;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    .content{
+        width: 60%;
+        position:absolute;
+        top:30%;
+        left: -2%;
+        transform: translateY(-200%);
+        text-align: left ;
+        color: rgba(255, 255, 255, 0.832);
+    
+    }
+    .content h1{
+        font-size: 50px;
+        margin-top: -70px;
+    }
+    .content1{
+        width: 40%;
+        position:absolute;
+        top:40%;
+        left:50%;
+        transform: translateY(270%);
+        text-align: left;
+        color: rgba(255, 255, 255, 0.832);
+        
+        }
+        .content1 h1{
+            font-size: 30px;
+            margin-top: -20px;
+        }
+
+    .content2{
+        width: 70%;
+        position:absolute;
+        top:110%;
+        left: 130%;
+        transform: translateY(200%);
+        text-align: left ;
+        color: rgba(255, 255, 255, 0.832);
+        
+        }
+        .content h1{
+            font-size: 30px;
+            margin-top: 30px;
+           
+        }
+
+        .content3{
+            width: 50%;
+            position:absolute;
+            top:-200%;
+            left:-360%;
+            transform: translateY(200%);
+            text-align: left ;
+            color: rgba(255, 255, 255, 0.832);
+            
+            }
+            .content h1{
+                font-size: 50px;
+                margin-top: 30px;
+               
+            }
+
+            .content4{
+                width: 70%;
+                position:absolute;
+                top:-620%;
+                left:720%;
+                transform: translateY(0%);
+                text-align: left ;
+                color: rgba(255, 255, 255, 0.832);
+                
+                }
+                .content h1{
+                    font-size: 50px;
+                    margin-top: 30px;
+                   
+                }
+
+        .logo{
+            width: 50px;
+            margin: 10px 10px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+}
+
+@media only screen and (max-width:320px){
+    button{
+        width: 100px;
+        height: 90px;
+        padding: 20px 0;
+        text-align: center;
+        margin: -50px 50px;
+        border-radius: 20px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-size: small;
+        word-break: 20%;
+        border: 2px solid rgb(7, 221, 103);
+        background:transparent;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+    .content{
+        width: 60%;
+        position:absolute;
+        top:30%;
+        left: -7%;
+        transform: translateY(-200%);
+        text-align: left ;
+        color: rgba(255, 255, 255, 0.832);
+    
+    }
+    .content h1{
+        font-size: 50px;
+        margin-top: -70px;
+    }
+    .content1{
+        width: 40%;
+        position:absolute;
+        top:40%;
+        left:50%;
+        transform: translateY(270%);
+        text-align: left;
+        color: rgba(255, 255, 255, 0.832);
+        
+        }
+        .content1 h1{
+            font-size: 30px;
+            margin-top: -20px;
+        }
+
+    .content2{
+        width: 70%;
+        position:absolute;
+        top:110%;
+        left: 130%;
+        transform: translateY(200%);
+        text-align: left ;
+        color: rgba(255, 255, 255, 0.832);
+        
+        }
+        .content h1{
+            font-size: 30px;
+            margin-top: 30px;
+           
+        }
+
+        .content3{
+            width: 50%;
+            position:absolute;
+            top:-200%;
+            left:-360%;
+            transform: translateY(200%);
+            text-align: left ;
+            color: rgba(255, 255, 255, 0.832);
+            
+            }
+            .content h1{
+                font-size: 50px;
+                margin-top: 30px;
+               
+            }
+
+            .content4{
+                width: 70%;
+                position:absolute;
+                top:-620%;
+                left:720%;
+                transform: translateY(0%);
+                text-align: left ;
+                color: rgba(255, 255, 255, 0.832);
+                
+                }
+                .content h1{
+                    font-size: 50px;
+                    margin-top: 30px;
+                   
+                }
+
+        .logo{
+            width: 50px;
+            margin: 10px 10px;
+            text-align: left;
+            cursor: pointer;
+        }
+
+}
+
+
+

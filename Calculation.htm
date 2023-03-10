@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Percentage Calculator</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		.button {
+			background-color: #0000FF; /* Blue */
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		.form-group {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+
+		label {
+			font-size: 23px;
+			margin-bottom: 5px;
+		}
+
+		input[type="number"] {
+			padding: 15px;
+			font-size: 20px;
+			border: solid;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="form-group">
+			<label for="total-classes">Total Number of Classes:</label>
+			<input type="number" id="total-classes">
+		</div>
+		<div class="form-group">
+			<label for="attended-classes">Number of Classes Attended:</label>
+			<input type="number" id="attended-classes">
+		</div>
+		<button class="button" onclick="calculatePercentage()">Calculate Attendance Percentage</button>
+		<p id="attendance-percentage"></p>
+	</div>
+
+	<script>
+		function calculatePercentage() {
+			const totalClasses = document.getElementById("total-classes").value;
+			const attendedClasses = document.getElementById("attended-classes").value;
+
+			if (totalClasses > 0 && attendedClasses >= 0 && attendedClasses <= totalClasses) {
+				const percentage = (attendedClasses / totalClasses) * 100;
+				document.getElementById("attendance-percentage").innerHTML = `Attendance Percentage: ${percentage.toFixed(2)}%`;
+			} else {
+				document.getElementById("attendance-percentage").innerHTML = "Please enter valid values.";
+			}
+		}
+	</script>
+</body>
+</html>
